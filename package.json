@@ -1,6 +1,6 @@
 {
   "name": "wcl-ui",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/wcl-ui.ssr.js",
   "browser": "dist/wcl-ui.esm.js",
@@ -8,6 +8,7 @@
   "unpkg": "dist/wcl-ui.min.js",
   "types": "dist/types/src/entry.esm.d.ts",
   "license": "MIT",
+  "private": true,
   "files": [
     "dist/*",
     "src/**/*.vue"
