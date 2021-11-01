@@ -1,5 +1,5 @@
 {
-  "name": "wcl-ui",
+  "name": "@hktuto/wcl-ui",
   "version": "0.0.1",
   "description": "",
   "main": "dist/wcl-ui.ssr.js",
@@ -54,5 +54,13 @@
   },
   "engines": {
     "node": ">=12"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/hktuto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:hktuto/wcl-ui.git",
+    "directory": "@hktuto/wcl-ui"
   }
 }
