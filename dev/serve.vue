@@ -13,6 +13,6 @@ export default Vue.extend({
 
 <template>
   <div id="app">
-    <wcl-ui-sample />
+    <wcl-button >asfa s</wcl-button>
   </div>
 </template>
