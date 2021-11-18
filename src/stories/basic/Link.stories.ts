@@ -1,9 +1,11 @@
-import { WclLink } from "../lib-components";
+import { WclLink } from "../../lib-components";
 
 import { Meta, Story } from "@storybook/vue";
 
+import "./Link.css";
+
 const base: Meta<typeof WclLink> = {
-  title: "ui/Link",
+  title: "Basic/Link",
   component: WclLink,
   argTypes: {
     type: {
@@ -18,11 +20,9 @@ const base: Meta<typeof WclLink> = {
       control: { type: "text" },
     },
     target: {
-      control: {
-        options: ["_self", "_blank"],
-        control: { type: "select" },
-        description: "link Target",
-      },
+      options: ["_self", "_blank"],
+      control: { type: "select" },
+      description: "link Target",
     },
     disabled: {
       control: { type: "boolean" },

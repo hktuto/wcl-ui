@@ -1,8 +1,9 @@
-import { WclButton } from "../lib-components";
+import { Meta, Story } from "@storybook/vue";
+import { WclButton } from "../../lib-components";
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
-  title: "ui/Button",
+  title: "Basic/Button",
   component: WclButton,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
@@ -22,10 +23,10 @@ export default {
     },
     click: { action: "click" },
   },
-};
+} as Meta;
 
 // More on component templates: https://storybook.js.org/docs/vue/writing-stories/introduction#using-args
-const Template = (args, { argTypes }) => ({
+const Template: Story = (_, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { WclButton },
   template: '<WclButton v-bind="$props" @click="click">Label</WclButton>',
